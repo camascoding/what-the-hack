@@ -1,0 +1,20 @@
+{
+  "name": "what-the-hack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/camascoding/what-the-hack.git",
+  "author": "What the Hack?",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "dev": "yarn run clean && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/*.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
