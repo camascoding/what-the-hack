@@ -1,5 +1,242 @@
+$accent: #ff898f
+
+// ----------------------- CIRCULAR  -----------------------
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-book.otf')
+//     font-weight: 400
+//     font-style: normal
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-book-italic.otf')
+//     font-weight: 400
+//     font-style: italic
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-medium.otf')
+//     font-weight: 500
+//     font-style: normal
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-medium-italic.otf')
+//     font-weight: 500
+//     font-style: italic
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-bold.otf')
+//     font-weight: 700
+//     font-style: normal
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-bold-italic.otf')
+//     font-weight: 700
+//     font-style: italic
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-black.otf')
+//     font-weight: 900
+//     font-style: normal
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('../fonts/circular/circular-black-italic.otf')
+//     font-weight: 900
+//     font-style: italic
+
+// ----------------------- AGRANDIR  -----------------------
+
+@font-face
+    font-family: 'Agrandir'
+    src: url('../fonts/agrandir/Agrandir-Regular.otf')
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: 'Agrandir'
+    src: url('../fonts/agrandir/Agrandir-TextBold.otf')
+    font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: 'Agrandir Wide'
+    src: url('../fonts/agrandir/Agrandir-WideLight.otf')
+    font-weight: 300
+    font-style: normal
+
+@font-face
+    font-family: 'Agrandir Grand'
+    src: url('../fonts/agrandir/Agrandir-GrandLight.otf')
+    font-weight: 300
+    font-style: regular
+@font-face
+    font-family: 'Agrandir Grand'
+    src: url('../fonts/agrandir/Agrandir-GrandMedium.otf')
+    font-weight: 500
+    font-style: regular
+@font-face
+    font-family: 'Agrandir Grand'
+    src: url('../fonts/agrandir/Agrandir-GrandBlack.otf')
+    font-weight: 900
+    font-style: regular
+
+// ----------------------- GLObAL  -----------------------
+
+// ::selection
+//     background: #fff
+//     color: #000
+
 html
     font-size: 62.5%
 
+body
+    font-family: 'Agrandir', --apple-system, sans-serif
+    font-weight: 400
+    margin: 0
+    padding: 0
+    color: #fff
+    background: #151719
+
+h1,h2,h3,h4,h5,h6
+    margin: 0
+
 h1
-    font-size: 4.8rem
+    font-family: 'Agrandir Grand', sans-serif
+    font-size: 6.8rem
+    text-transform: uppercase
+    font-weight: 900
+h3
+    font-size: 2.4rem
+
+a
+    text-decoration: none
+
+.hr
+    border-bottom: 1px solid
+    opacity: .3
+    margin: 4rem 0
+
+.container
+    width: 60%
+    margin: 0 auto
+
+.btn
+    color: black
+    width: 20rem
+    text-align: center
+    font-family: 'Agrandir Grand', sans-serif
+    font-weight: 500
+    font-size: 1.9rem
+    background: $accent
+    padding: 2.2rem 4.8rem
+
+    &-secondary
+        background: #fff
+        color: #000
+
+nav
+    background: #151719
+    z-index: 999
+    position: fixed
+    top: 0
+    width: 100%
+    display: flex
+    border-bottom: 1px solid #3a3a3a
+    .container
+        width: 100%
+        padding: 0 2.7vw
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .brand
+            font-family: 'Agrandir Wide', sans-serif
+
+            font-size: 2.2rem
+            // font-weight: 900
+            vertical-align: middle
+        .navlinks
+            font-family: 'Agrandir Grand', sans-serif
+            font-weight: 500
+            margin: 0
+            padding: 0
+            list-style: none
+            font-size: 1.9rem
+
+            li
+
+                display: inline-block
+                &:not(:last-child)
+                    margin-right: 6.4rem
+
+                a
+
+                    text-decoration: none
+                    color: inherit
+
+        .register
+            font-family: 'Agrandir Grand', sans-serif
+            font-weight: 500
+            font-size: 1.9rem
+
+            a
+                color: black
+
+                .btn
+                    background: white
+                    // padding: 2.2rem 4.8rem
+                    padding: 2.2rem 3.6rem
+
+#hero-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 16rem 0
+    text-align: center
+
+    .logo
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 6em
+        font-size: 2.2rem
+
+    // h1
+    //     margin: 2rem 0
+
+    .blurb
+        max-width: 56rem
+        margin: 2rem auto
+        font-size: 1.1vw
+        letter-spacing: .1rem
+        line-height: 1.6
+
+    a
+        color: black
+        text-decoration: none
+        .btn
+            margin-top: 4rem
+
+.wrapper
+    padding: 8rem 2.7vw
+    h1
+        line-height: 1
+
+#schedule-wrapper
+    background: #0C0C0C
+    // color: $accent
+    // h1
+    //     color: #fff
+
+// #team-wrapper
+//     color: $accent
+
+#sponsors-wrapper
+    background: $accent
+    color: #000
