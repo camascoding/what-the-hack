@@ -60,8 +60,14 @@ $accent: #ff898f
 
 @font-face
     font-family: 'Agrandir'
-    src: url('../fonts/agrandir/Agrandir-TextBold.otf')
+    src: url('../fonts/agrandir/Agrandir-Bold.otf')
     font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: 'Agrandir'
+    src: url('../fonts/agrandir/Agrandir-Medium.otf')
+    font-weight: 500
     font-style: normal
 
 @font-face
@@ -80,6 +86,13 @@ $accent: #ff898f
     src: url('../fonts/agrandir/Agrandir-GrandMedium.otf')
     font-weight: 500
     font-style: regular
+
+@font-face
+    font-family: 'Agrandir Grand'
+    src: url('../fonts/agrandir/Agrandir-GrandBold.otf')
+    font-weight: 700
+    font-style: regular
+
 @font-face
     font-family: 'Agrandir Grand'
     src: url('../fonts/agrandir/Agrandir-GrandBlack.otf')
@@ -108,14 +121,21 @@ h1,h2,h3,h4,h5,h6
 
 h1
     font-family: 'Agrandir Grand', sans-serif
-    font-size: 6.8rem
+    font-size: 3.5vw
     text-transform: uppercase
     font-weight: 900
 h3
-    font-size: 2.4rem
+    font-size: 1.5vw
+
+h4
+    font-size: 1vw
+    font-weight: 500
 
 a
     text-decoration: none
+
+.col-sm
+    width: calc((100vw - 5.4vw - 1.4vw)/ 2)
 
 .hr
     border-bottom: 1px solid
@@ -189,8 +209,6 @@ nav
                 color: black
 
                 .btn
-                    background: white
-                    // padding: 2.2rem 4.8rem
                     padding: 2.2rem 3.6rem
 
 #hero-wrapper
@@ -225,18 +243,25 @@ nav
 
 .wrapper
     padding: 8rem 2.7vw
-    h1
-        line-height: 1
+    .links
+        margin-top: 8rem
 
 #schedule-wrapper
     background: #0C0C0C
-    // color: $accent
-    // h1
-    //     color: #fff
 
-// #team-wrapper
-//     color: $accent
+    .event-list
+        .event
+            margin: 4rem 0
+            font-family: 'Agrandir Grand', sans-serif
+            font-weight: 700
+            .caption
+                text-transform: uppercase
+
+#team-wrapper
+    background: #0c0c0c
 
 #sponsors-wrapper
     background: $accent
     color: #000
+
+.footer
