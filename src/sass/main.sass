@@ -1,129 +1,27 @@
 $accent: #ff6161
 
-// ----------------------- CIRCULAR  -----------------------
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-book.otf')
-//     font-weight: 400
-//     font-style: normal
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-book-italic.otf')
-//     font-weight: 400
-//     font-style: italic
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-medium.otf')
-//     font-weight: 500
-//     font-style: normal
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-medium-italic.otf')
-//     font-weight: 500
-//     font-style: italic
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-bold.otf')
-//     font-weight: 700
-//     font-style: normal
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-bold-italic.otf')
-//     font-weight: 700
-//     font-style: italic
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-black.otf')
-//     font-weight: 900
-//     font-style: normal
-
-// @font-face
-//     font-family: 'Circular'
-//     src: url('../fonts/circular/circular-black-italic.otf')
-//     font-weight: 900
-//     font-style: italic
-
-// ----------------------- AGRANDIR  -----------------------
-
-@font-face
-    font-family: 'Agrandir'
-    src: url('../fonts/agrandir/Agrandir-Regular.otf')
-    font-weight: 400
-    font-style: normal
-
-@font-face
-    font-family: 'Agrandir'
-    src: url('../fonts/agrandir/Agrandir-Bold.otf')
-    font-weight: 700
-    font-style: normal
-
-@font-face
-    font-family: 'Agrandir'
-    src: url('../fonts/agrandir/Agrandir-Medium.otf')
-    font-weight: 500
-    font-style: normal
-
-@font-face
-    font-family: 'Agrandir Wide'
-    src: url('../fonts/agrandir/Agrandir-WideLight.otf')
-    font-weight: 300
-    font-style: normal
-
-@font-face
-    font-family: 'Agrandir Grand'
-    src: url('../fonts/agrandir/Agrandir-GrandLight.otf')
-    font-weight: 300
-    font-style: regular
-@font-face
-    font-family: 'Agrandir Grand'
-    src: url('../fonts/agrandir/Agrandir-GrandMedium.otf')
-    font-weight: 500
-    font-style: regular
-
-@font-face
-    font-family: 'Agrandir Grand'
-    src: url('../fonts/agrandir/Agrandir-GrandBold.otf')
-    font-weight: 700
-    font-style: regular
-
-@font-face
-    font-family: 'Agrandir Grand'
-    src: url('../fonts/agrandir/Agrandir-GrandBlack.otf')
-    font-weight: 900
-    font-style: regular
-
-// ----------------------- GLObAL  -----------------------
-
-// ::selection
-//     background: #fff
-//     color: #000
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap')
 
 html
     font-size: 62.5%
 
 body
-    font-family: 'Agrandir', --apple-system, sans-serif
+    font-family: 'Source Sans Pro', --apple-system, sans-serif
     font-weight: 400
     margin: 0
     padding: 0
     color: #fff
     background: #151719
 
-h1,h2,h3,h4,h5,h6
+h1, h2, h3, h4, h5, h6
     margin: 0
 
 h1
-    font-family: 'Agrandir Grand', sans-serif
+    font-family: 'Source Sans Pro', sans-serif
     font-size: 3.5vw
     text-transform: uppercase
     font-weight: 900
+
 h3
     font-size: 1.5vw
 
@@ -153,7 +51,7 @@ span.red
     color: black
     width: 20rem
     text-align: center
-    font-family: 'Agrandir Grand', sans-serif
+    font-family: 'Source Sans Pro', sans-serif
     font-weight: 500
     font-size: 1.9rem
     background: $accent
@@ -179,13 +77,12 @@ nav
         align-items: center
 
         .brand
-            font-family: 'Agrandir Wide', sans-serif
+            font-family: 'Source Sans Pro Wide', sans-serif
 
             font-size: 2.2rem
-            // font-weight: 900
             vertical-align: middle
         .navlinks
-            font-family: 'Agrandir Grand', sans-serif
+            font-family: 'Source Sans Pro', sans-serif
             font-weight: 500
             margin: 0
             padding: 0
@@ -193,18 +90,16 @@ nav
             font-size: 1.9rem
 
             li
-
                 display: inline-block
                 &:not(:last-child)
                     margin-right: 6.4rem
 
                 a
-
                     text-decoration: none
                     color: inherit
 
         .register
-            font-family: 'Agrandir Grand', sans-serif
+            font-family: 'Source Sans Pro', sans-serif
             font-weight: 500
             font-size: 1.9rem
 
@@ -231,9 +126,6 @@ nav
             height: 30%
             filter: brightness(100)
 
-    // h1
-    //     margin: 2rem 0
-
     .blurb
         max-width: 56rem
         margin: 2rem auto
@@ -258,7 +150,7 @@ nav
     .event-list
         .event
             margin: 4rem 0
-            font-family: 'Agrandir Grand', sans-serif
+            font-family: 'Source Sans Pro', sans-serif
             font-weight: 700
             .caption
                 text-transform: uppercase
@@ -270,8 +162,6 @@ nav
     background: $accent
     color: #000
 
-// .footer
-
 @media screen and (max-width:864px)
     .wrapper
         padding: 60px 4vw
@@ -279,10 +169,13 @@ nav
         width: 100%
 
 .icon
-  margin: 2em
-  width: 10em
+    margin: 2em
+    width: 10em
 
 .centered
     display: flex
     align-items: center
     justify-content: center
+
+.appannie:hover
+    transition: scale(1.5)
